@@ -1,6 +1,7 @@
-package cat.tecnocampus.persintence;
+package cat.tecnocampus.Controllers;
 
 import cat.tecnocampus.domain.Classroom;
+import cat.tecnocampus.persintence.ClassroomDAO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +16,20 @@ public class Controller {
         }
 
 
+    public Classroom createClassroom(String name, int capacity, String orientation, boolean plugs) {
+
+        Classroom classroom = new Classroom.ClassroomBuilder()
+                .capacity(capacity)
+                .name(name)
+                .orientation(orientation)
+                .plugs(plugs)
+                .build();
+
+        insert(classroom);
+
+        return classroom;
+
+    }
         public List<Classroom> findAll(){
             return classroomDAO.findAll();
         }

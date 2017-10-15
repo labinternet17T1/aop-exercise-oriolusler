@@ -2,7 +2,7 @@ package cat.tecnocampus;
 
 import cat.tecnocampus.domain.Classroom;
 import cat.tecnocampus.persintence.ClassroomDAO;
-import cat.tecnocampus.persintence.Controller;
+import cat.tecnocampus.Controllers.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
