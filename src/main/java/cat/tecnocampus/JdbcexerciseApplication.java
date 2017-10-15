@@ -19,6 +19,7 @@ public class JdbcexerciseApplication implements CommandLineRunner{
 
 	@Autowired
 	Controller controller;
+
 	public static void main(String[] args) {
 		SpringApplication.run(JdbcexerciseApplication.class, args);
 	}

@@ -8,19 +8,13 @@ import java.util.List;
 @Service("Controller")
 public class Controller {
 
-        // private static Controller controller;
         private ClassroomDAO classroomDAO;
 
         public Controller(ClassroomDAO classroomDAO){
             this.classroomDAO  = classroomDAO;
         }
 
-        /*  public synchronized static Controller getInstace(){
-              if(controller == null)
-                  controller = new Controller();
-              return controller;
-          }
-      */
+
         public List<Classroom> findAll(){
             return classroomDAO.findAll();
         }
